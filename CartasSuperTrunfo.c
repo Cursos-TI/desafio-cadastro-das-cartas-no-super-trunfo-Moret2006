@@ -29,7 +29,7 @@ Ex: Maranhão = 120.000
 
 //primeira carta.
     char estado;
-    char nc[10], cod[3];
+    char nc[10],cod[3];
     int populacao;
     int valor;
     float km;
@@ -51,4 +51,8 @@ Ex: Maranhão = 120.000
 
     printf("Digite o codigo da sua carta:\n");
     scanf("%s",cod);
+    scanf("%s",cod);
+        printf("sdasda %s",cod);//apagar essa linha 
+    printf("Qual é a quantidade de habitantes da seu Estado ou País?:\n");
+    scanf("%f",populacao);
 }
