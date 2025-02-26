@@ -42,7 +42,7 @@ Ex: Maranhão = 120.000
     float km1;
     float PIB1;
 
-
+//Primeira carta
     printf("Escolha o nome do seu Estado ou País:\n");
     scanf("%s",nc);
     
@@ -52,7 +52,31 @@ Ex: Maranhão = 120.000
     printf("Digite o codigo da sua carta:\n");
     scanf("%s",cod);
     scanf("%s",cod);
-        printf("sdasda %s",cod);//apagar essa linha 
+         
     printf("Qual é a quantidade de habitantes da seu Estado ou País?:\n");
-    scanf("%f",populacao);
+    scanf("%d",&populacao);
+
+    printf("Qual é o tamanho da area do seu Estado ou País?:\n" );
+    scanf("%f",&km);
+
+    printf("Qual é o valor do PIB da sua carta?:\n");
+    scanf("%f",PIB);
+
+    printf("Digite o Nivel de poder da sua carta:\n");
+    scanf("%d",valor);
+
+return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
