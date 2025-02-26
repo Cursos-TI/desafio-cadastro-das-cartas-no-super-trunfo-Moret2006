@@ -1,22 +1,54 @@
 #include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+#include "CartasSuperTrunfo.h"
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+/* 
+estado = Letra incial do Estado/País.
+Ex: Maranhão = M
 
-    return 0;
+cc = codigo da carta 
+Obs1: o codigo da carta deve começar com a letra do "estado" e em seguida um numero.
+Obs2: o codigo da carta só poderar ter no maxímo 3 caracterizes. 
+Ex: M01
+
+nc = nome da carta.
+ex: Maranhão
+
+populacao = numero de habitantes no Estado/País.
+Ex: Maranhão = 120.000
+
+Valor = Nivel de poder da carta.
+Ex: Maranhão = 100
+
+Km = tamanho do estado.
+Ex: Maranhão = 230.000
+
+PIB = Produto0 Interno bruto.
+Ex: Maranhão = 120.000
+*/
+
+//primeira carta.
+    char estado;
+    char nc[10], cod[3];
+    int populacao;
+    int valor;
+    float km;
+    float PIB;
+//Segunda carta.
+    char estado1;
+    char nc1[10], cc1[5];
+    int populacao1;
+    int valor1;
+    float km1;
+    float PIB1;
+
+
+    printf("Escolha o nome do seu Estado ou País:\n");
+    scanf("%s",nc);
+    
+    printf("Digite a inicial do seu Estado:\n" );
+    scanf("%c\n",&estado);
+
+    printf("Digite o codigo da sua carta:\n");
+    scanf("%s",cod);
 }
