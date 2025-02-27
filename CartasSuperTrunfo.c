@@ -2,117 +2,90 @@
 #include "CartasSuperTrunfo.h"
 
 int main() {
-/* 
-estado = Letra incial do Estado.
-Ex: Maranhão = M
-
-cc = codigo da carta 
-Obs1: o codigo da carta deve começar com a letra do "estado" e em seguida um numero.
-Obs2: o codigo da carta só poderar ter no maxímo 3 caracterizes. 
-Ex: M01
-
-nc = nome da carta.
-ex: Maranhão
-
-populacao = numero de habitantes no Estado.
-Ex: Maranhão = 120.000
-
-Valor = Nivel de poder da carta.
-Ex: Maranhão = 100
-
-Km = tamanho do estado.
-Ex: Maranhão = 230.000
-
-PIB = Produto0 Interno bruto.
-Ex: Maranhão = 120.000
-*/
-
-//primeira carta.
-    char estado;
-    char nc[10],cod[3];
+    // Primeira carta
+    char Letra;
+    char Estado[10], Cod[4];
     int populacao;
     int valor;
     float km;
     float PIB;
-//Segunda carta.
-    char estado1;
-    char nc1[10],cod1[3];
+
+    // Segunda carta
+    char letra2;
+    char estado[10], cod1[4];
     int populacao1;
     int valor1;
     float km1;
     float PIB1;
 
-//Primeira carta
-    printf("Escolha o nome do seu Estado:\n");
-    scanf("%s", nc);
-    
-    printf("Digite a inicial do seu Estado:\n" );
-    scanf("%c\n", &estado);
+    //primeira carta
+printf("Qual Estado você escolhe?\n");
+scanf("%s",Estado);
 
-    printf("Digite o codigo da sua carta:\n");
-    scanf("%s", cod);
-    scanf("%s", cod);
-         
-    printf("Qual é a quantidade de habitantes da seu Estado?:\n");
-    scanf("%d", &populacao);
+printf("Digite a inical do Estado escolhido:\n");
+scanf(" %c",&Letra);
 
-    printf("Qual é o tamanho da area do seu Estado?:\n" );
-    scanf("%f", &km);
+printf("Digite o codigo da carta:\n");
+scanf("%s",Cod); //n sei oq esta errado
 
-    printf("Qual é o valor do PIB da sua carta?:\n");
-    scanf("%f", &PIB);
+printf("Quantos habitantes tem no Estado escolhido?\n");
+scanf("%d",&populacao);
 
-    printf("Digite o Nivel de poder da sua carta:\n");
-    scanf("%d", &valor);
+printf("Qual valor do PIB do Estado escolhido?\n");
+scanf("%f",&PIB);
+
+printf("Quantos KM² tem o Estado escolhido?\n");
+scanf("%f",&km);
+
+printf("Qual é o nivel do seu Estado?\n");
+scanf("%d",&valor);
+
 
 //segunda carta
-printf("Agora vamos cadastrar a segunda carta!\n");
+printf("Qual Estado você escolhe?\n");
+scanf("%s",estado);
 
-    printf("Escolha o nome do seu Estado:\n");
-    scanf("%s", nc1);
-    
-    printf("Digite a inicial do seu Estado:\n" );
-    scanf("%c\n", &estado1);
+printf("Digite a inical do Estado escolhido:\n");
+scanf(" %c",&letra2);
 
-    printf("Digite o codigo da sua carta:\n");
-    scanf("%s", cod1);
-    scanf("%s", cod1);
-         
-    printf("Qual é a quantidade de habitantes da seu Estado?:\n");
-    scanf("%d", &populacao1);
+printf("Digite o codigo da carta:\n");
+scanf("%s",cod1); //n sei oq esta errado
 
-    printf("Qual é o tamanho da area do seu Estado?:\n" );
-    scanf("%f", &km1);
+printf("Quantos habitantes tem no Estado escolhido?\n");
+scanf("%d",&populacao1);
 
-    printf("Qual é o valor do PIB da sua carta?:\n");
-    scanf("%f", &PIB1);
-    
-    printf("Digite o Nivel de poder da sua carta:\n");
-    scanf("%d", &valor1);
+printf("Qual valor do PIB do Estado escolhido?\n");
+scanf("%f",&PIB1);
+
+printf("Quantos KM² tem o Estado escolhido?\n");
+scanf("%f",&km1);
+
+printf("Qual é o nivel do seu Estado?\n");
+scanf("%d",&valor1);
 
 
-printf("Primeira carta!\n");
-    printf("Numero da carta : %s\n Letra do seu estado: %c\n", nc, estado);
-    printf("Codigo da carta: %s\n", cod);
-    printf("Quantidade de habitantes:%d\n", populacao);
-    printf("Km²: %.4f\n", km);
-    printf("Produto interno bruto: %.4f\n", PIB);
-    printf("Valor da carta: %d\n", valor);
-    
+//primeira carta
+printf("Atributos da primeira carta:\n");
+printf("\n");
+printf("Estado: %s\n",Estado);
+printf("letra: %c\n",Letra);
+printf("Codigo: %s\n",Cod);
+printf("População: %d\n",populacao);
+printf("PIB: %.4f\n",PIB);
+printf("KM²: %.4f\n", km);
+printf("Valor: %d\n",valor);
+printf("\n");
 
-
-
-return 0;
-
-
-
-
-
-
-
-
-
-
+//segunda carta
+printf("Atributos da segunda carta:\n");
+printf("\n");
+printf("Estado: %s\n",estado);
+printf("letra: %c\n",letra2);
+printf("Codigo: %s\n",cod1);
+printf("População: %d\n",populacao1);
+printf("PIB: %.4f\n",PIB1);
+printf("KM²: %.4f\n", km1);
+printf("Valor: %d",valor1);
 
 
 
