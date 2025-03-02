@@ -2,6 +2,30 @@
 #include "CartasSuperTrunfo.h"
 
 int main() {
+/* 
+estado = Letra incial do Estado.
+Ex: Maranhão = M
+
+cc = codigo da carta 
+Obs1: o codigo da carta deve começar com a letra do "estado" e em seguida um numero.
+Obs2: o codigo da carta só poderar ter no maxímo 3 caracterizes. 
+Ex: M01
+
+nc = nome da carta.
+ex: Maranhão
+
+populacao = numero de habitantes no Estado.
+Ex: Maranhão = 120.000
+
+Valor = Nivel de poder da carta.
+Ex: Maranhão = 100
+
+Km = tamanho do estado.
+Ex: Maranhão = 230.000
+
+PIB = Produto0 Interno bruto.
+Ex: Maranhão = 120.000
+*/
     // Primeira carta
     char Letra;
     char Estado[10], Cod[4];
@@ -18,7 +42,7 @@ int main() {
     float km1;
     float PIB1;
 
-    //primeira carta
+//primeira carta
 printf("Qual Estado você escolhe?\n");
 scanf("%s",Estado);
 
