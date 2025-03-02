@@ -34,7 +34,7 @@ Ex: Maranhão = 120.000
     float km;
     float PIB;
     float densidadep;
-
+    float pibperc;
     // Segunda carta
     char letra2;
     char estado[10], cod1[4];
@@ -43,6 +43,7 @@ Ex: Maranhão = 120.000
     float km1;
     float PIB1;
     float densidadep1;
+    float pibperc1;
 
 //primeira carta
 printf("* Primeira carta *");
@@ -94,9 +95,11 @@ scanf("%f",&km1);
 printf("Qual é o nivel do seu Estado?\n");
 scanf("%d",&valor1);
 
-densidadep = populacao / km;
+densidadep = (float) populacao / km;
+densidadep1 = (float) populacao1 / km1;
 
-densidadep1 = populacao1 / km1;
+pibperc = (float) PIB / populacao;
+pibperc1 = (float) PIB1 / populacao1;
 
 //primeira carta
 printf("Atributos da primeira carta:\n");
@@ -109,6 +112,7 @@ printf("PIB: %.3f\n",PIB);
 printf("KM²: %.3f\n", km);
 printf("Valor: %d\n",valor);
 printf("Densidade Populacional: %f \n", densidadep);
+printf("PIB por capita: %.2f\n", pibperc);
 printf("\n");
 
 //segunda carta
@@ -122,7 +126,7 @@ printf("PIB: %.3f\n",PIB1);
 printf("KM²: %.3f\n", km1);
 printf("Valor: %d \n",valor1);
 printf("Densidade Populacional: %f \n", densidadep1);
-
+printf("PIB por capita: %.2f\n", pibperc1);
 
 
 }
