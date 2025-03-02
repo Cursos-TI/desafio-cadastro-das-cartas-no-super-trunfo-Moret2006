@@ -33,6 +33,7 @@ Ex: Maranhão = 120.000
     int valor;
     float km;
     float PIB;
+    float densidadep;
 
     // Segunda carta
     char letra2;
@@ -41,8 +42,10 @@ Ex: Maranhão = 120.000
     int valor1;
     float km1;
     float PIB1;
+    float densidadep1;
 
 //primeira carta
+printf("* Primeira carta *");
 printf("Qual Estado você escolhe?\n");
 scanf("%s",Estado);
 
@@ -63,9 +66,13 @@ scanf("%f",&km);
 
 printf("Qual é o nivel do seu Estado?\n");
 scanf("%d",&valor);
+printf("\n");
+
 
 
 //segunda carta
+
+printf("* segunda carta *");
 printf("Qual Estado você escolhe?\n");
 scanf("%s",estado);
 
@@ -87,6 +94,9 @@ scanf("%f",&km1);
 printf("Qual é o nivel do seu Estado?\n");
 scanf("%d",&valor1);
 
+densidadep = populacao / km;
+
+densidadep1 = populacao1 / km1;
 
 //primeira carta
 printf("Atributos da primeira carta:\n");
@@ -95,9 +105,10 @@ printf("Estado: %s\n",Estado);
 printf("letra: %c\n",Letra);
 printf("Codigo: %s\n",Cod);
 printf("População: %d\n",populacao);
-printf("PIB: %.4f\n",PIB);
-printf("KM²: %.4f\n", km);
+printf("PIB: %.3f\n",PIB);
+printf("KM²: %.3f\n", km);
 printf("Valor: %d\n",valor);
+printf("Densidade Populacional: %f \n", densidadep);
 printf("\n");
 
 //segunda carta
@@ -107,9 +118,10 @@ printf("Estado: %s\n",estado);
 printf("letra: %c\n",letra2);
 printf("Codigo: %s\n",cod1);
 printf("População: %d\n",populacao1);
-printf("PIB: %.4f\n",PIB1);
-printf("KM²: %.4f\n", km1);
-printf("Valor: %d",valor1);
+printf("PIB: %.3f\n",PIB1);
+printf("KM²: %.3f\n", km1);
+printf("Valor: %d \n",valor1);
+printf("Densidade Populacional: %f \n", densidadep1);
 
 
 
