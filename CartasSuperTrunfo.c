@@ -25,6 +25,12 @@ Ex: Maranhão = 230.000
 
 PIB = Produto0 Interno bruto.
 Ex: Maranhão = 120.000
+
+densidadep = densidade populacional que é feito a divisao de "populacao" por "km".
+
+pibperc = PIB por capita que é feito a divisao de "PIB" por "populacao".
+
+SuperPower = É realizada a soma de todos os valores numericos da carta.
 */
     // Primeira carta
     char Letra;
@@ -35,6 +41,8 @@ Ex: Maranhão = 120.000
     float PIB;
     float densidadep;
     float pibperc;
+    float SuperPowerA;
+
     // Segunda carta
     char letra2;
     char estado[10], cod1[4];
@@ -44,9 +52,13 @@ Ex: Maranhão = 120.000
     float PIB1;
     float densidadep1;
     float pibperc1;
+    float SuperPowerB;
+
+    //resultado
+    int resultado;
 
 //primeira carta
-printf("* Primeira carta *");
+printf("* Primeira carta *\n");
 printf("Qual Estado você escolhe?\n");
 scanf("%s",Estado);
 
@@ -69,11 +81,9 @@ printf("Qual é o nivel do seu Estado?\n");
 scanf("%d",&valor);
 printf("\n");
 
-
-
 //segunda carta
 
-printf("* segunda carta *");
+printf("* segunda carta *\n");
 printf("Qual Estado você escolhe?\n");
 scanf("%s",estado);
 
@@ -101,6 +111,10 @@ densidadep1 = (float) populacao1 / km1;
 pibperc = (float) PIB / populacao;
 pibperc1 = (float) PIB1 / populacao1;
 
+SuperPowerA = (float) populacao + PIB + km + valor + densidadep + pibperc;
+SuperPowerB = (float) populacao1 + PIB1 + km1 + valor1 + densidadep1 + pibperc1;
+
+resultado = SuperPowerA > SuperPowerB;
 //primeira carta
 printf("Atributos da primeira carta:\n");
 printf("\n");
@@ -113,6 +127,7 @@ printf("KM²: %.3f\n", km);
 printf("Valor: %d\n",valor);
 printf("Densidade Populacional: %f \n", densidadep);
 printf("PIB por capita: %.2f\n", pibperc);
+printf("O valor do seu super é: %.2f\n", SuperPowerA);
 printf("\n");
 
 //segunda carta
@@ -127,6 +142,11 @@ printf("KM²: %.3f\n", km1);
 printf("Valor: %d \n",valor1);
 printf("Densidade Populacional: %f \n", densidadep1);
 printf("PIB por capita: %.2f\n", pibperc1);
+printf("O valor do seu super é: %.2f\n", SuperPowerB);
 
+//Final do programa (Hora do resultado)
+printf("Se o resultado for 1 a primeira carta ganhou!\n");
+printf("Se o resultado for 0 a segunda carta ganhou!\n");
+printf("O resulta é: %d\n", resultado);
 
 }
